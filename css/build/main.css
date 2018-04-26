@@ -1,37 +1,37 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'Gagalin-Regular';
-  src: url("Gagalin-Regular.woff") format("woff");
+  font-family: "Gagalin-Regular";
+  src: url("../../fonts/Gagalin-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'LifeHack';
-  src: url("LifeHack-Medium.woff") format("woff");
+  font-family: "LifeHack-Medium";
+  src: url("../../fonts/LifeHack-Medium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Ubuntu-Bold';
-  src: url("Ubuntu-Bold.woff") format("woff");
+  font-family: "Ubuntu-Bold";
+  src: url("../../fonts/Ubuntu-Bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Ubuntu-Light';
-  src: url("Ubuntu-Light.woff") format("woff");
+  font-family: "Ubuntu-Light";
+  src: url("../../fonts/Ubuntu-Light.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Ubuntu-Medium';
-  src: url("Ubuntu-Medium.woff") format("woff");
+  font-family: "Ubuntu-Medium";
+  src: url("../../fonts/Ubuntu-Medium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Ubuntu';
-  src: url("Ubuntu.woff") format("woff");
+  font-family: "Ubuntu";
+  src: url("../../fonts/Ubuntu.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -95,6 +95,7 @@ ul li {
   display: inline-block;
   vertical-align: top;
   margin-top: 29px;
+  margin-left: 6px;
 }
 .header__btn-button {
   background: #e45028;
@@ -112,6 +113,17 @@ ul li {
   background: #c1401e;
   cursor: pointer;
 }
+.header__burger-logo, .header__disclaimer {
+  display: inline-block;
+}
+.header__burger-logo {
+  width: 48%;
+}
+.header__disclaimer {
+  margin-left: 26px;
+  margin-top: 125px;
+  vertical-align: top;
+}
 .header__burger-picture {
   width: 417px;
   height: 424px;
@@ -128,7 +140,7 @@ ul li {
 }
 .header__disclaimer-do {
   color: #f9b43b;
-  font-family: "LifeHack";
+  font-family: "Gagalin-Regular";
   font-size: 72px;
   font-weight: 400;
   line-height: 85px;
@@ -136,11 +148,41 @@ ul li {
 }
 .header__disclaimer-natural {
   color: #ffffff;
-  font-family: 'Gagalin-Regular';
+  font-family: 'LifeHack-Medium';
   font-size: 65px;
   font-weight: 500;
   letter-spacing: -1.63px;
   line-height: 85px;
+  margin-top: -57px;
+}
+.header__disclaimer-natural-burger {
+  margin-top: -89px;
+}
+.header__vertical {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 33px;
+  margin-top: -11px;
+}
+.header__vertical__list {
+  list-style-type: none;
+}
+.header__vertical__item {
+  color: #fff;
+  padding-bottom: 3px;
+  text-align: center;
+}
+.header__vertical__item-active {
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+}
+.header__vertical__item:after {
+  content: '•';
+  height: 6px;
+  width: 6px;
 }
 
 .best {
