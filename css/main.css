@@ -244,6 +244,21 @@ ul li {
   margin-right: -37px;
 }
 
+.burgers__slider {
+  background: url("../../img/stubs/stub1.png") center center no-repeat;
+  min-height: 649px;
+}
+
+.team {
+  background: url("../../img/stubs/stub2.png") center center no-repeat;
+  min-height: 649px;
+}
+
+.menu {
+  background: url("../../img/stubs/stub3@2x.png") center center no-repeat;
+  min-height: 649px;
+}
+
 .comments__list {
   list-style-type: none;
 }
