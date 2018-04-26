@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Gagalin-Regular";
   src: url("../../fonts/Gagalin-Regular.woff") format("woff");
@@ -42,6 +43,140 @@ body {
 ul li {
   margin: 0;
   padding: 0;
+}
+
+.greeting {
+  background: url("../../img/greeting/bg.png") top center no-repeat;
+}
+
+.header {
+  min-height: 649px;
+}
+.header__logo {
+  display: inline-block;
+  margin-left: 76px;
+  margin-top: 12px;
+}
+.header__menu {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 184px;
+  margin-top: 20px;
+}
+.header__list {
+  display: inline-block;
+}
+.header__item {
+  display: inline-block;
+  text-transform: uppercase;
+}
+.header__item-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 13px;
+  padding-right: 12px;
+}
+.header__item:after {
+  content: '•';
+  color: #fff;
+  padding-right: 10px;
+}
+.header__list li:last-child:after {
+  content: none;
+}
+.header__btn {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 29px;
+  margin-left: 6px;
+}
+.header__btn-button {
+  background: #e45028;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  width: 97px;
+  height: 35px;
+  font-family: Ubuntu;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+}
+.header__btn-button:hover {
+  background: #c1401e;
+  cursor: pointer;
+}
+.header__burger-logo, .header__disclaimer {
+  display: inline-block;
+}
+.header__burger-logo {
+  width: 48%;
+}
+.header__disclaimer {
+  margin-left: 26px;
+  margin-top: 125px;
+  vertical-align: top;
+}
+.header__burger-picture {
+  width: 417px;
+  height: 424px;
+  display: inline-block;
+  padding-left: 132px;
+  margin-top: -9px;
+}
+.header__burger-drops {
+  width: 451px;
+  height: 241px;
+  position: absolute;
+  left: 496px;
+  top: 143px;
+}
+.header__disclaimer-do {
+  color: #f9b43b;
+  font-family: "Gagalin-Regular";
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 85px;
+  text-transform: uppercase;
+}
+.header__disclaimer-natural {
+  color: #ffffff;
+  font-family: 'Lifehack-Medium';
+  font-size: 65px;
+  font-weight: 500;
+  letter-spacing: -1.63px;
+  line-height: 85px;
+  margin-top: -57px;
+}
+.header__disclaimer-natural-burger {
+  margin-top: -89px;
+}
+.header__vertical {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 33px;
+  margin-top: -11px;
+}
+.header__vertical__list {
+  list-style-type: none;
+}
+.header__vertical__item {
+  color: #fff;
+  padding-bottom: 3px;
+  text-align: center;
+}
+.header__vertical__item-active {
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+}
+.header__vertical__item:after {
+  content: '•';
+  height: 6px;
+  width: 6px;
 }
 
 .container {
