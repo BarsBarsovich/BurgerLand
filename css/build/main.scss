@@ -1,4 +1,52 @@
-@import url("fonts.scss");
+@font-face 
+{
+    font-family: 'Gagalin-Regular';
+    src: url('Gagalin-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'LifeHack';
+    src: url('LifeHack-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face 
+{
+    font-family: 'Ubuntu-Bold';
+    src: url('Ubuntu-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Ubuntu-Light';
+    src: url('Ubuntu-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face 
+{
+    font-family: 'Ubuntu-Medium';
+    src: url('Ubuntu-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Ubuntu';
+    src: url('Ubuntu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body{
     height: 100%;
@@ -24,7 +72,6 @@ ul{
     background: url("../../img/greeting/texture.png");
 }
 
-
 .header{
     min-height: 649px;
     &__logo{
@@ -43,20 +90,48 @@ ul{
     &__list{
         display: inline-block;
     }
-
     &__item{
         display: inline-block;    
         text-transform: uppercase;  
-        color: #ffffff;
-        font-family: Ubuntu;
-        font-size: 13px;
     }
 
     &__item-link{
         text-decoration: none;   
-        color:#fff;     
+        color: #ffffff;
+        font-family: Ubuntu;
+        font-size: 13px;
+        padding-right: 12px;
+        
     }
-
+    &__item:after{
+        content: '•';
+        color:#fff;
+        padding-right: 10px;
+    }
+    &__list li:last-child:after{
+        content: none;
+    }
+    &__btn{
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 29px;
+    }
+    &__btn-button{
+        background: #e45028;
+        border-radius: 5px;
+        text-transform: uppercase;
+        color:#fff;
+        width: 97px;
+        height: 35px;
+        font-family: Ubuntu;
+        font-size: 13px;
+        cursor: pointer;
+        border:none;
+    }
+    &__btn-button:hover{
+        background: #c1401e;
+        cursor: pointer;
+    }
     &__burger-picture{
         width: 417px;
         height: 424px;  
@@ -64,7 +139,6 @@ ul{
         padding-left: 132px;   
         margin-top: -9px;
     }
-
     &__burger-drops{
         width: 451px;
         height: 241px;
@@ -73,8 +147,22 @@ ul{
         top: 143px;    
     }
 
-    &__disclaimer{
-        color:#f9b43b;
+    &__disclaimer-do{
+        color: #f9b43b;
+        font-family:'LifeHack' ;
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 85px;
+        text-transform: uppercase;
+    }
+
+    &__disclaimer-natural{
+        color: #ffffff;
+        font-family: 'Gagalin-Regular';
+        font-size: 65px;
+        font-weight: 500;
+        letter-spacing: -1.63px;
+        line-height: 85px;
     }
 }
 
@@ -87,8 +175,4 @@ ul{
     &__list, &__item{
         display: inline-block;
     }
-
-    // &__item__logo, &__item__caption, &__item__text{
-    //     display: inline-block;
-    // }
 }
