@@ -1,3 +1,4 @@
+@import url("fonts.scss");
 body {
   height: 100%;
   width: 100%;
@@ -9,13 +10,13 @@ ul li {
 }
 
 .greeting {
-  background: url("/img/greeting/bg.png") top center no-repeat;
+  background: url("../../img/greeting/bg.png") top center no-repeat;
 }
 
 .container {
   width: 1100px;
   margin: auto;
-  background: url("/img/greeting/texture.png");
+  background: url("../../img/greeting/texture.png");
 }
 
 .header {
@@ -38,6 +39,9 @@ ul li {
 .header__item {
   display: inline-block;
   text-transform: uppercase;
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 13px;
 }
 .header__item-link {
   text-decoration: none;
@@ -64,4 +68,7 @@ ul li {
 .best {
   background: url("/img/best/bg.psb.png");
   min-height: 649px;
+}
+.best__list, .best__item {
+  display: inline-block;
 }
