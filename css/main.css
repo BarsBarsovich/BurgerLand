@@ -202,12 +202,12 @@ ul li {
   margin-left: 358px;
 }
 .best__item {
-  width: 30%;
+  width: 33%;
   text-align: center;
   vertical-align: top;
 }
 .best__item__logo {
-  margin-left: 57px;
+  margin-left: 31px;
   margin-top: 28px;
 }
 .best__item__caption {
@@ -216,12 +216,11 @@ ul li {
   font-size: 24px;
   font-weight: 500;
   letter-spacing: -0.6px;
-  margin-left: 54px;
+  margin-left: 22px;
   margin-top: 29px;
 }
 .best__item__caption-two-lines {
-  margin-top: 42px;
-  margin-left: 47px;
+  padding-top: 12px;
 }
 .best__item__text {
   color: #2f3234;
@@ -229,6 +228,24 @@ ul li {
   font-size: 14px;
   font-weight: 300;
   line-height: 24.02px;
+  padding-top: 12px;
+  padding-left: 34px;
+}
+.best__item__text-mt {
+  margin-top: 4px;
+}
+.best__item__text-ml {
+  margin-left: 4px;
+}
+.best__list li:nth-child(1) {
+  margin-right: -32px;
+}
+.best__list li:nth-child(2) {
+  margin-right: -37px;
+}
+
+.comments__list {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=main.css.map */
