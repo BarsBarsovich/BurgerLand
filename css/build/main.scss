@@ -1,4 +1,4 @@
-@each $font in 'Gagalin-Regular', 'LifeHack-Medium', 'Ubuntu-Bold', 
+@each $font in 'Gagalin-Regular', 'Lifehack-Medium', 'Ubuntu-Bold', 
                 'Ubuntu-Light','Ubuntu-Medium','Ubuntu' {
     @font-face{
         font-family: $font;
