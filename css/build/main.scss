@@ -25,4 +25,12 @@
     &__list{
         list-style-type: none;
     }
+    &__list, &__item{
+        display: inline-block;
+    }
+
+    &____item__content-logo{
+        width: 275px;
+        height: 325px;
+    }
 }
