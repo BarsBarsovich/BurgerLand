@@ -1,9 +1,0 @@
-@each $font in 'Gagalin-Regular', 'Lifehack-Medium', 'Ubuntu-Bold', 
-                'Ubuntu-Light','Ubuntu-Medium','Ubuntu' {
-    @font-face{
-        font-family: $font;
-        src: url('../../fonts/'+ $font + '.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-}

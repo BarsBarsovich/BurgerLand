@@ -45,6 +45,12 @@ ul li {
   padding: 0;
 }
 
+.container {
+  width: 1100px;
+  margin: auto;
+  background: url("../../img/greeting/texture.png");
+}
+
 .greeting {
   background: url("../../img/greeting/bg.png") top center no-repeat;
 }
@@ -179,27 +185,6 @@ ul li {
   width: 6px;
 }
 
-.container {
-  width: 1100px;
-  margin: auto;
-  background: url("../../img/greeting/texture.png");
-}
-
-.burgers__slider {
-  background: url("../../img/stubs/stub1.png") center center no-repeat;
-  min-height: 649px;
-}
-
-.team {
-  background: url("../../img/stubs/stub2.png") center center no-repeat;
-  min-height: 649px;
-}
-
-.menu {
-  background: url("../../img/stubs/stub3@2x.png") center center no-repeat;
-  min-height: 649px;
-}
-
 .best {
   background: url("../../img/best/bg.png");
   min-height: 649px;
@@ -257,17 +242,6 @@ ul li {
 }
 .best__list li:nth-child(2) {
   margin-right: -37px;
-}
-
-.comments__list {
-  list-style-type: none;
-}
-.comments__list, .comments__item {
-  display: inline-block;
-}
-.comments____item__content-logo {
-  width: 275px;
-  height: 325px;
 }
 
 /*# sourceMappingURL=main.css.map */

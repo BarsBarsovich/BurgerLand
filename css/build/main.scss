@@ -8,8 +8,6 @@
     }
 }
 
-
-
 body{
     height: 100%;
     width: 100%;
@@ -20,6 +18,14 @@ ul{
         margin: 0;
         padding: 0;
     }
+}
+
+
+
+.container{
+    width: 1100px;
+    margin: auto;
+    background: url("../../img/greeting/texture.png");
 }
 
 .greeting
@@ -165,32 +171,7 @@ ul{
     }    
 }
 
-
-
-
-.container{
-    width: 1100px;
-    margin: auto;
-    background: url("../../img/greeting/texture.png");
-}
  
-
-
-.burgers__slider{
-    background: url("../../img/stubs/stub1.png") center center no-repeat;
-    min-height: 649px;
-}
-
-.team{
-    background: url("../../img/stubs/stub2.png") center center no-repeat;
-    min-height: 649px; 
-}
-
-.menu{
-    background: url("../../img/stubs/stub3@2x.png") center center no-repeat;
-    min-height: 649px; 
-}
-
 .best{
     background: url("../../img/best/bg.png");
     min-height: 649px;
@@ -257,19 +238,5 @@ ul{
     }
     &__list li:nth-child(2){
         margin-right: -37px;
-    }
-}
-
-.comments{
-    &__list{
-        list-style-type: none;
-    }
-    &__list, &__item{
-        display: inline-block;
-    }
-
-    &____item__content-logo{
-        width: 275px;
-        height: 325px;
     }
 }
