@@ -1,4 +1,20 @@
 @charset "UTF-8";
+body {
+  height: 100%;
+  width: 100%;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1100px;
+  margin: auto;
+  background: url("../../img/greeting/texture.png");
+}
+
 @font-face {
   font-family: "Gagalin-Regular";
   src: url("../../fonts/Gagalin-Regular.woff") format("woff");
@@ -35,24 +51,8 @@
   font-weight: normal;
   font-style: normal;
 }
-body {
-  height: 100%;
-  width: 100%;
-}
-
-ul li {
-  margin: 0;
-  padding: 0;
-}
-
 .greeting {
   background: url("../../img/greeting/bg.png") top center no-repeat;
-}
-
-.container {
-  width: 1100px;
-  margin: auto;
-  background: url("../../img/greeting/texture.png");
 }
 
 .header {
@@ -186,9 +186,49 @@ ul li {
 }
 
 .best {
-  background: url("../../img/best/bg.psb.png");
+  background: url("../../img/best/bg.png");
   min-height: 649px;
 }
 .best__list, .best__item {
   display: inline-block;
 }
+.best__title {
+  color: #2f3234;
+  font-family: 'Gagalin-Regular';
+  font-size: 72px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 118px;
+  margin-left: 358px;
+}
+.best__item {
+  width: 30%;
+  text-align: center;
+  vertical-align: top;
+}
+.best__item__logo {
+  margin-left: 57px;
+  margin-top: 28px;
+}
+.best__item__caption {
+  color: #2f3234;
+  font-family: 'Lifehack-Medium';
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.6px;
+  margin-left: 54px;
+  margin-top: 29px;
+}
+.best__item__caption-two-lines {
+  margin-top: 42px;
+  margin-left: 47px;
+}
+.best__item__text {
+  color: #2f3234;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24.02px;
+}
+
+/*# sourceMappingURL=main.css.map */
