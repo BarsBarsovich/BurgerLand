@@ -183,6 +183,11 @@ ul li {
   height: 6px;
   width: 6px;
 }
+.header__arrow {
+  margin-left: 533px;
+  margin-top: 82px;
+  cursor: pointer;
+}
 
 .best {
   background: url("../../img/best/bg.png");
