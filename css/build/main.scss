@@ -271,22 +271,52 @@ ul{
         background: url("../../img/comments/kostya.png") no-repeat;
         width: 275px;
         height: 325px;
-        // filter:grayscale(1);
-        filter: brightness(0.2);
-        // opacity: 0.3;
+        
+        filter: brightness(0.7);
+        
     }
     &__item__content-container{
         position: absolute;
     }
-    // &__item__content-logo{
-    //     filter:grayscale(1);
-    // }
     &__item__content-container-name{
         color: #ffffff;
         font-family: 'Gagalin-Regular';
         font-size: 14px;
         font-weight: 400;
         text-transform: uppercase;
-        padding-top: 47px;
+        padding-top: 53px;
+        padding-left: 19px;
     }
+    &__item__content-container-text{
+        color: #ffffff;
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        padding-left: 19px;
+        width: 20%;
+        padding-top: 20px;
+    }
+    &__item__content-btncontainer{
+        padding-left: 19px;
+        padding-top: 12px;
+    }
+    &__item__content-btn{
+        width: 110px;
+        height: 35px;
+        text-transform: uppercase;
+        color:#fff;
+        background: #2f3234;
+        border-radius: 5px;        
+        font-family: Ubuntu;
+        font-size: 13px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+    }
+    &__item__content-btn:hover{
+        background:#1f2122;
+    }
+
+    
   }

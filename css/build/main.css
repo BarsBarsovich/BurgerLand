@@ -272,7 +272,7 @@ ul li {
   background: url("../../img/comments/kostya.png") no-repeat;
   width: 275px;
   height: 325px;
-  filter: brightness(0.2);
+  filter: brightness(0.7);
 }
 .comments__item__content-container {
   position: absolute;
@@ -283,7 +283,38 @@ ul li {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  padding-top: 47px;
+  padding-top: 53px;
+  padding-left: 19px;
+}
+.comments__item__content-container-text {
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  padding-left: 19px;
+  width: 20%;
+  padding-top: 20px;
+}
+.comments__item__content-btncontainer {
+  padding-left: 19px;
+  padding-top: 12px;
+}
+.comments__item__content-btn {
+  width: 110px;
+  height: 35px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #2f3234;
+  border-radius: 5px;
+  font-family: Ubuntu;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+.comments__item__content-btn:hover {
+  background: #1f2122;
 }
 
 /*# sourceMappingURL=main.css.map */
