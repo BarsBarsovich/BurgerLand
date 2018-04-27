@@ -268,5 +268,22 @@ ul li {
 .comments__item {
   display: inline-block;
 }
+.comments__item__content-bg {
+  background: url("../../img/comments/kostya.png") no-repeat;
+  width: 275px;
+  height: 325px;
+  filter: brightness(0.2);
+}
+.comments__item__content-container {
+  position: absolute;
+}
+.comments__item__content-container-name {
+  color: #ffffff;
+  font-family: 'Gagalin-Regular';
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 47px;
+}
 
 /*# sourceMappingURL=main.css.map */
