@@ -1,0 +1,63 @@
+.best{
+    background: url("../img/backrounds/best.bg.png") center center / cover no-repeat;
+    
+}
+
+.section__title-best{
+    color:#000;
+    display: flex;
+    justify-content: center;
+}
+
+.best__list, .best__item{
+    display: inline-block;
+}
+
+
+.best__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team{
+    background: url("../img/backrounds/team.bg.png") top center/cover no-repeat;
+}
+
+.menu{
+    background: url("../img/backrounds/burgers.bg.png") center center/cover no-repeat;
+}
+
+.comments{
+    background: #000;
+}
+
+
+.form{
+    background: url("../img/backrounds/form.bg.png") center center/cover no-repeat;
+}
+
+.map{
+    background: url("../img/backrounds/map.bg.png") center center/cover no-repeat;
+}
+
+
+.footer{
+    display: flex;
+    align-self: flex-end;
+    background: #111111;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.footer__adress{
+    color: #ffffff;
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer__phone{
+    color: #e45028;
+    font-family: 'Ubuntu';
+}

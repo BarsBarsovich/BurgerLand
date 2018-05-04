@@ -1,5 +1,34 @@
 .hero {
     background: url("../img/backrounds/hero.bg.png") center center / cover no-repeat;
-    height: 100vh;
-    width: 100%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__btn-lnk{
+    text-transform: uppercase;
+    background: $orange;
+    border-radius: 5px;
+    width: 97px;
+    height: 35px;
+    display: block;
+    color:$white;
+    text-decoration: none;
+    padding: 12px 13px;
+    font-family: Ubuntu;
+    font-size: 13px;
+}
+
+
+.hero__content{
+    color:$white;
+    font-family: Lifehack;
+    font-size: 65px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }

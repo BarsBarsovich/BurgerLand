@@ -1,6 +1,12 @@
+
+@import "./layout/fonts.scss";
 //variables 
 @import "./config/variables.scss";
 //common
 @import "./layout/common.scss";
 //hero
 @import "./section/hero.scss";
+@import "./section/nav.scss";
+
+@import "./section/best.scss";
+@import "./section/burger.scss";
