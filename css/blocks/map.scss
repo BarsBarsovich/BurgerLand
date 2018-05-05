@@ -1,0 +1,50 @@
+.map {
+    background: url("../img/backrounds/map.bg.png") center center/cover no-repeat;
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    align-self: flex-end;
+    background: #000;
+    min-height: 70px;
+}
+
+.footer__address {
+    color: #ffffff;
+    font-family: Ubuntu;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.footer__phone {
+    font-family: "Ubuntu Light";
+    font-weight: 300;
+    /* Text style for "+7 (812) 3" */
+    color: $orange;
+    padding-top: 10px;
+    display: block;
+}
+
+.footer__social-svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    opacity: 0.3;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.footer__social-list,
+.footer__social-item {
+    display: inline-block;
+}
+
+.footer__social-item {
+    padding-right: 10px;
+}
+
+.footer__social {
+    justify-self: flex-end;
+}

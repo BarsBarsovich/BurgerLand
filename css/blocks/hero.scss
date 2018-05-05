@@ -1,0 +1,82 @@
+.hero {
+    background: url('../img/backrounds/hero.bg.png') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header__btns {
+    display: flex;
+    align-items: center;
+    // margin-left: auto;
+    margin-left: 226px;
+    margin-top: -5px;
+}
+
+.hero__container {
+    flex: 1;
+}
+
+.hero__content {
+    flex: .8;
+    display: flex;
+    align-items: center;
+}
+
+.hero__text {
+    color: #fff;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    &:last-child {
+        .nav__link:after {
+            display: none;
+        }
+    }
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: Ubuntu;
+    font-size: 13px;
+    font-weight: 500;
+    &:after {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #fff;
+        margin: 0 16px;
+    }
+}
+
+.hero__pic {
+    width: 50%;
+}
+
+.hero__desc {
+    color: #ffffff;
+    font-family: 'Lifehack-Medium';
+    font-size: 65px;
+    letter-spacing: -1.63px;
+    line-height: 85px;
+    text-transform: uppercase;
+}
+
+.hero__text {
+    width: 50%;
+}
