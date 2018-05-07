@@ -1,16 +1,35 @@
 .map {
-    background: url("../img/backrounds/map.bg.png") center center/cover no-repeat;
+    background: url("../../img/backrounds/map.bg.png") center center/cover no-repeat;
     display: flex;
+    flex-direction: column;
+}
+
+.empty {
+    // flex-flow: 1;
+    height: 100%;
 }
 
 .footer {
-    display: flex;
-    align-self: flex-end;
     background: #000;
-    min-height: 70px;
+    min-height: 60px;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    // display: flex;
 }
 
-.footer__address {
+.container__footer {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.footer__social-list {
+    display: flex;
+}
+
+.footer__adr {
     color: #ffffff;
     font-family: Ubuntu;
     font-size: 14px;
@@ -20,8 +39,7 @@
 .footer__phone {
     font-family: "Ubuntu Light";
     font-weight: 300;
-    /* Text style for "+7 (812) 3" */
-    color: $orange;
+    color: #e45028;
     padding-top: 10px;
     display: block;
 }
@@ -31,20 +49,16 @@
     height: 20px;
     fill: #fff;
     opacity: 0.3;
-    &:hover {
-        opacity: 1;
-    }
 }
 
-.footer__social-list,
-.footer__social-item {
-    display: inline-block;
-}
-
-.footer__social-item {
-    padding-right: 10px;
+.footer__social-svg:hover {
+    opacity: 1;
 }
 
 .footer__social {
-    justify-self: flex-end;
+    margin-top: 20px;
+}
+
+.footer__social-item {
+    padding-right: 20px;
 }

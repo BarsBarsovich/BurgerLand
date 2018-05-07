@@ -1,3 +1,44 @@
 .burgers {
-    background: url("../../img//backrounds/burgers.bg.png") center center/cover no-repeat;
+    background-color: #f9b43b;
+    background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+}
+
+.burger__title {
+    font-family: 'Gagalin-Regular';
+    font-size: 72px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 63.93px;
+    margin-bottom: 20px;
+}
+
+.burger__text {
+    color: #ffffff;
+    font-family: 'Ubuntu-Light';
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.burgers__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.burger__price {
+    color: #e35028;
+    font-family: 'Gagalin-Regular';
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.burger__cost {
+    display: flex;
+}
+
+.burger__price {
+    margin-right: 20px;
 }
