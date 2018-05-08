@@ -2,14 +2,15 @@
     background: url("../img/backrounds/best.bg.png") center center/cover no-repeat;
     display: flex;
     align-items: center;
+    @include tablets() {
+        flex-direction: column;
+    }
 }
 
 .best__list {
     display: flex;
     justify-content: space-around;
-    @include phones() {
-        flex-direction: column;
-    }
+
 }
 
 .best__item {
@@ -31,6 +32,25 @@
     }
     &-natural {
         fill: #8ac03e;
+    }
+
+    &-left-hand{
+        transform: rotate(-270deg);
+    }
+
+    &-right-hand{
+        transform: rotate(270deg);
+    }
+
+    &-burger-sostav{
+        width: 46px;
+        height: 46px;
+        text-align: center;
+        fill: #fff;
+    }
+
+    &-dumbell{
+        fill:#f8c682;
     }
 }
 

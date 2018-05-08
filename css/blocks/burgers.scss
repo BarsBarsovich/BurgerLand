@@ -2,7 +2,12 @@
     background-color: #f9b43b;
     background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
     display: flex;
+    // @include tablets(){
+    //     flex-direction: row;
+    // }
 }
+
+
 
 .burger__title {
     font-family: 'Gagalin-Regular';
@@ -27,6 +32,9 @@
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
+    @include tablets() {
+        flex-direction: column;    
+    }
 }
 
 .burger__price {
@@ -38,8 +46,85 @@
 
 .burger__cost {
     display: flex;
+    @include tablets(){
+        margin-left: 40%;
+    }
 }
 
 .burger__price {
     margin-right: rem(20px);
+}
+
+.left__arrow{
+    @include tablets(){
+        margin-top: rem(-120px);
+        position: absolute;
+        margin-left: rem(-250px);
+    }
+}
+
+.right_arrow{
+    @include tablets(){
+        position: absolute;
+        margin-top: -8.25rem;
+        margin-left: 17.375rem;   
+    }
+}
+
+.burger__content{
+    @include tablets(){
+        text-align: center;
+    }
+}
+
+
+.burger__icons{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;    
+    position: absolute;    
+    left: rem(106px);
+    @include tablets(){
+        flex-direction: row;
+        justify-content: space-between;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 80%;
+        height: rem(100px);
+        position: absolute;
+        top: rem(20px);
+    }
+}
+
+.burger__icons-burger{
+    border: 1px solid none;
+    height: rem(90px);
+    width: rem(90px);  
+    border-radius: 5px;
+    background: $btnOrange;
+    text-align: center;
+    margin-top: rem(20px);
+    // margin-bottom: rem(320px);
+    fill:#fff;
+    &:after{
+        content: "состав";
+        text-transform: uppercase;
+        margin-top: -2px;
+        color:#fff;
+
+    }
+}
+
+.burger__icons-kkal{
+    text-align: center;
+    margin-bottom:  rem(75px);
+
+    &:after{
+        content:"ккал";
+        position: relative;
+        text-transform: uppercase;
+        color:#fff;
+        display: block;
+    }
 }
