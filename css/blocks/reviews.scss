@@ -11,6 +11,11 @@
             opacity: 1;
         }
     }
+    @include tablets() {
+        height: 25%;
+        width: 50%;
+        background-position: top center;
+    }
 }
 
 .review__list {
@@ -26,7 +31,36 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(#000, .5);
+    background: rgba(#000, .4);
     opacity: 0;
-    // display: none;
+    @include phones() {
+        display: none;
+    }
+}
+
+.reviews__title {
+    color: #ffffff;
+    font-family: 'Gagalin-Regular';
+    font-size: rem(14px);
+    font-weight: 400;
+    padding: rem(50px) rem(19px);
+}
+
+.reviews__text {
+    color: #ffffff;
+    font-family: 'Ubuntu-Light';
+    font-size: rem(14px);
+    font-weight: 300;
+    align-items: center;
+    text-align: justify;
+    width: 76%;
+    margin-left: rem(19px);
+    margin-top: rem(-40px);
+}
+
+.btn-dark {
+    width: rem(110px);
+    height: rem(35px);
+    margin-left: rem(20px);
+    margin-top: rem(20px);
 }

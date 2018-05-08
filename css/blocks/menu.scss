@@ -4,9 +4,9 @@
 }
 
 .container__menu {
-    width: 960px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: rem(960px);
+    padding-left: rem(10px);
+    padding-right: rem(10px);
     margin: auto;
 }
 
@@ -33,19 +33,19 @@
 }
 
 .menu-list__item_active .menu-list__content {
-    max-width: 540px;
-    padding: 62px 35px;
+    max-width: rem(540px);
+    padding: rem(62px) rem(35px);
     visibility: visible;
     opacity: 1;
 }
 
 .menu-list__title {
     position: relative;
-    width: 80px;
+    width: rem(80px);
     font-family: 'Gagalin', sans-serif;
-    font-size: 40px;
+    font-size: rem(40px);
     color: #fff;
-    line-height: 80px;
+    line-height: rem(80px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -68,10 +68,10 @@
 .menu-list__content {
     background-color: rgba(47, 50, 52, .929);
     color: #fff;
-    font-size: 14px;
+    font-size: rem(14px);
     font-family: 'Ubuntu', sans-serif;
     line-height: 1.714;
-    max-width: 0px;
+    max-width: rem(0px);
     visibility: hidden;
     opacity: 0;
     transition: 1s;

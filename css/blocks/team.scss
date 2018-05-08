@@ -15,6 +15,9 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    @include tablets() {
+        width: 100%;
+    }
 }
 
 .acco__trigger {
@@ -42,10 +45,6 @@
     }
 }
 
-.acco_container {
-    margin-top: -295px;
-}
-
 .acco__item-active {
     .acco__content {
         display: flex;
@@ -60,10 +59,22 @@
 
 .acco__content {
     display: none;
+    @include tablets() {
+        flex-direction: column;
+    }
 }
 
 .acco_desc {
     margin-left: 26px;
+    @include tablets() {
+        text-align: center;
+    }
+}
+
+.acco__picture {
+    @include tablets() {
+        text-align: center;
+    }
 }
 
 .acco__picture-pic {

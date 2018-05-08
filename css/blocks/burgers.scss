@@ -1,23 +1,24 @@
 .burgers {
     background-color: #f9b43b;
     background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+    display: flex;
 }
 
 .burger__title {
     font-family: 'Gagalin-Regular';
-    font-size: 72px;
+    font-size: rem(72px);
     font-weight: 400;
     color: #fff;
     line-height: 63.93px;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 }
 
 .burger__text {
     color: #ffffff;
     font-family: 'Ubuntu-Light';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 }
 
 .burgers__container {
@@ -31,7 +32,7 @@
 .burger__price {
     color: #e35028;
     font-family: 'Gagalin-Regular';
-    font-size: 30px;
+    font-size: rem(30px);
     font-weight: 400;
 }
 
@@ -40,5 +41,5 @@
 }
 
 .burger__price {
-    margin-right: 20px;
+    margin-right: rem(20px);
 }

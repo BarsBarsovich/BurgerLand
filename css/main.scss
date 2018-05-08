@@ -1,9 +1,21 @@
 $btnOrange: #c1401e;
 $btnHovered:#c54d2d;
 $yellow:#f9b43b;
+$black: #2f3234;
+// resolutions
+$desktop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;
+//common
 @import "./common/fonts.scss";
+@import "./common/media.scss";
 @import "./common/layout.scss";
+@import "./common/fixed-menu.scss";
+//content
 @import "./blocks/hero.scss";
+@import "blocks/hamburger-menu-link.scss";
+@import "blocks/hamburger-menu.scss";
 @import "./blocks/best.scss";
 @import "./blocks/burgers.scss";
 @import "./blocks/team.scss";

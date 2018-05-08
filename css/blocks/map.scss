@@ -7,14 +7,18 @@
 .empty {
     // flex-flow: 1;
     height: 100%;
+    min-height: 37rem;
+    @include tablets {
+        min-height: 40rem;
+    }
 }
 
 .footer {
     background: #000;
-    min-height: 60px;
+    min-height: rem(60px);
     width: 100%;
     color: #fff;
-    font-size: 20px;
+    font-size: rem(20px);
     position: relative;
     // display: flex;
 }
@@ -32,21 +36,21 @@
 .footer__adr {
     color: #ffffff;
     font-family: Ubuntu;
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: rem(14px);
+    margin-top: rem(10px);
 }
 
 .footer__phone {
     font-family: "Ubuntu Light";
     font-weight: 300;
     color: #e45028;
-    padding-top: 10px;
+    padding-top: rem(10px);
     display: block;
 }
 
 .footer__social-svg {
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
     fill: #fff;
     opacity: 0.3;
 }
@@ -56,9 +60,9 @@
 }
 
 .footer__social {
-    margin-top: 20px;
+    margin-top: rem(20px);
 }
 
 .footer__social-item {
-    padding-right: 20px;
+    padding-right: rem(20px);
 }
