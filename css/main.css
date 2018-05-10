@@ -490,9 +490,15 @@ p {
 }
 
 .burgers {
-  background-color: #f9b43b;
-  background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+  background: url("../img/backrounds/gradient.png") center center/cover no-repeat;
   display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .burgers {
+    flex-direction: row;
+  }
 }
 
 .burger__title {
@@ -598,7 +604,7 @@ p {
   border-radius: 5px;
   background: #c1401e;
   text-align: center;
-  margin-top: 1.25rem;
+  margin-top: 5.5rem;
   fill: #fff;
 }
 
@@ -611,7 +617,7 @@ p {
 
 .burger__icons-kkal {
   text-align: center;
-  margin-bottom: 4.6875rem;
+  margin-bottom: 5.5rem;
 }
 
 .burger__icons-kkal:after {
@@ -989,6 +995,14 @@ p {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+}
+
+@media screen and (max-width: 480px) {
+  .container__footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .footer__social-list {
