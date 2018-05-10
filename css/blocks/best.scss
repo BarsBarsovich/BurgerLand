@@ -10,7 +10,8 @@
 .best__list {
     display: flex;
     justify-content: space-around;
-
+    height: 100%;
+    align-items: center;
 }
 
 .best__item {
@@ -33,24 +34,20 @@
     &-natural {
         fill: #8ac03e;
     }
-
-    &-left-hand{
+    &-left-hand {
         transform: rotate(-270deg);
     }
-
-    &-right-hand{
+    &-right-hand {
         transform: rotate(270deg);
     }
-
-    &-burger-sostav{
+    &-burger-sostav {
         width: 46px;
         height: 46px;
         text-align: center;
         fill: #fff;
     }
-
-    &-dumbell{
-        fill:#f8c682;
+    &-dumbell {
+        fill: #f8c682;
     }
 }
 

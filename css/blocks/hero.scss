@@ -56,6 +56,7 @@
 }
 
 .hero__content {
+    height: 100%;
     display: flex;
     align-items: center;
     @include tablets {
@@ -84,7 +85,7 @@
 }
 
 .hero__container {
-    flex: 1;
+    flex: 99;
     align-items: center;
 }
 
