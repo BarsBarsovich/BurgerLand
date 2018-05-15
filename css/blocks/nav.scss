@@ -1,0 +1,23 @@
+.nav{
+    display: flex;    
+    align-items: center;
+}
+
+.nav__list{
+    display: flex;
+}
+
+.nav__item{
+    text-transform: uppercase;
+    color:#fff;
+    padding-right: 20px;
+    &:before{
+        content: "";
+        height: 4px;
+        width: 4px;
+        border-radius: 5px;
+        display: block;
+        color:#fff;
+        
+    }
+}

@@ -1,4 +1,35 @@
 .hero{
-    background: url("../../img/backrounds/hero.bg.png") center center/cover no-repeat;
+    background: url("../img/backrounds/hero.png") center center/cover no-repeat;
     display: flex;
+    height: 100%;
+    // position: relative;
+}
+
+.hero__content{
+    display: flex;
+    align-items: center;
+}
+
+.hero__burger-pic{
+    max-width: 100%;
+}
+.hero__text{
+    max-width: 50%;
+    margin-left: 2%;
+}
+
+.hero__text-best{
+    color: $orange;
+    font-size: 72px;
+    font-weight: 400;
+    @include gagalin();
+}
+
+.hero__text-natural{
+    color: #ffffff;
+    font-size: 65px;
+    font-weight: 500;
+    letter-spacing: -1.63px;
+    line-height: 85px;
+    @include lifehack();
 }
