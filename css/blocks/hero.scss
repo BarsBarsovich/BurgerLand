@@ -3,29 +3,11 @@
     min-height: rem(649px);
 }
 
-.nav__link {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: Ubuntu;
-    font-size: rem(13px);
-}
-
-.nav__item {
-    display: flex;
-    align-items: center;
-    &:after {
-        content: "";
-        height: rem(4px);
-        width: rem(4px);
-        border-radius: 50%;
-        background: #fff;
-        display: block;
-        margin: 0 rem(10px);
-        align-content: center;
-    }
-    &:last-child:after {
-        display: none;
+.hero__logo{
+    z-index: 101;
+    position: relative;
+    @include tablets(){
+        margin-top: rem(88px);
     }
 }
 
@@ -35,24 +17,6 @@
     @include tablets() {
         justify-content: space-between;
     }
-}
-
-.header__links {
-    display: flex;
-    align-items: center;
-}
-
-.nav {
-    display: flex;
-    margin-right: 2rem;
-    margin-left: rem(224px);
-    @include tablets() {
-        display: none;
-    }
-}
-
-.nav__list {
-    display: flex;
 }
 
 .hero__content {
@@ -101,8 +65,160 @@
     margin-left: 50%;
 }
 
-// .hero__content-pic {
-//     @include tablets {
-//         margin-top: rem(-120px);
-//     }
-// }
+
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .nav_active .nav__modal_noactive {
+    display: none;
+  }
+  
+  .nav_active .nav__modal_active {
+    display: block;
+  }
+  
+  .nav_active .nav__list {
+    -ms-transform: translateX(0%);
+        transform: translateX(0%);
+  }
+  
+  .nav__logo {
+    position: relative;
+    z-index: 1001;
+  }
+  
+  .nav__list {
+    padding: 10px 15px;
+    margin: 0;
+    list-style: none;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+    text-transform: uppercase;
+  }
+  
+  .nav__item {
+    position: relative;
+    padding: 0 15px;
+  }
+  
+  .nav__item::after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+  }
+  
+  .nav__item:last-of-type {
+    padding-right: 0;
+  }
+  
+  .nav__item:last-of-type::after {
+    display: none;
+  }
+  
+  .nav__link {
+    display: inline-block;
+  }
+  
+  .nav__link, .nav__link:focus, .nav__link:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav__link:hover, .nav__link:active {
+    color: #eee;
+    text-decoration: none;
+  }
+  
+  .nav__order {
+    background: #e45028;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  .nav__order, .nav__order:focus, .nav__order:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav__order:hover, .nav__order:active {
+    color: #fff;
+    background: #bb4221;
+    text-decoration: none;
+  }
+  
+  .nav__modal {
+    display: none;
+    position: relative;
+    z-index: 1001;
+  }
+  
+  .nav__modal_noactive {
+    display: block;
+  }
+  
+  .nav__modal_active {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav__list {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #303335;
+      z-index: 100;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+      transition: all .3s;
+    }
+  
+    .nav__item {
+      padding: 15px;
+    }
+  
+    .nav__item::after {
+      top: auto;
+      bottom: 0;
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+      left: 0;
+      margin: auto;
+    }
+  
+    .nav__item:last-of-type {
+      padding-right: 15px;
+    }
+  
+    .nav__modal {
+      display: block;
+    }
+  }

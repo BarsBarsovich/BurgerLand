@@ -17,48 +17,22 @@
             <section class="section hero">
                 <div class="container hero__inner_container">
                     <header class="header">
-                        <a href="#">
-                            <img src="./img/logo.svg" alt="burger logo">
-                        </a>
-                        <nav class="nav">
+                        <div class="container">
+                          <div class="nav" id="navid"><img class="nav__logo" src="./img/logo.svg" alt="">
                             <ul class="nav__list">
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link">
-                                    О нас
-                                </a>
-                                </li>
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link"> 
-                                    Бургеры
-                                </a>
-                                </li>
-                                <li class="nav__item">
-                                    <a href="" class="nav__link"> 
-                                    Команда
-                                </a>
-                                </li>
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link"> 
-                                    Меню
-                                </a>
-                                </li>
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link"> 
-                                    Отзывы
-                                </a>
-                                </li>
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link"> 
-                                    Контакты
-                                </a>
-                                </li>
+                              <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+                              <li class="nav__item"><a class="nav__link" href="#">Бургеры</a></li>
+                              <li class="nav__item"><a class="nav__link" href="#">Команда</a></li>
+                              <li class="nav__item"><a class="nav__link" href="#">Меню</a></li>
+                              <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
+                              <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
                             </ul>
-                        </nav>
-                        <div class="header__links">
-                            <a class="order-link btn" href="">Заказать</a>
-                            <a class="hamburger-menu-link" href="">
-                                <div class="hamburger-menu-link__bars"></div>
+                            <a class="nav__order" href="#">Заказать</a>
+                            <a class="nav__modal js-opennav" href="#">
+                              <div class="nav__modal_noactive"><img src="./img/menu-open.png" alt=""></div>
+                              <div class="nav__modal_active"><img src="./img/menu-close.png" alt=""></div>
                             </a>
+                          </div>
                         </div>
                     </header>
                     <div class="hero__container">
