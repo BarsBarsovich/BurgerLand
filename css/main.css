@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../fonts/ubuntu-b-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu-bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -138,6 +138,11 @@ p {
 
 .btn:hover {
   background: #c54d2d;
+}
+
+.btn-close {
+  margin-top: 1.25rem;
+  margin-left: 20%;
 }
 
 .section__title {
@@ -1283,7 +1288,6 @@ p {
 
 .empty {
   height: 100%;
-  min-height: 37rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -1302,6 +1306,7 @@ p {
 }
 
 .container__footer {
+  height: 97%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1367,6 +1372,68 @@ p {
 
 .footer__social-item {
   padding-right: 1.25rem;
+}
+
+.modalWindow,
+.modalOrder {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalWindow__content {
+  margin: 15% auto;
+  padding: 15px;
+  border: 1px solid #888;
+  background-color: #ffffff;
+  height: 12rem;
+  width: 28.9375rem;
+}
+
+.modalWindow__content-order {
+  width: 12.4375rem;
+  height: 6.8125rem;
+}
+
+.modal__text {
+  margin-top: 1.625rem;
+  font-family: 'Ubuntu-Light';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.title-author {
+  color: #2f3234;
+  font-family: 'Gagalin-Regular';
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.modalWindow__title-contaner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

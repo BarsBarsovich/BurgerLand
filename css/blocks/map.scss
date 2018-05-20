@@ -7,7 +7,7 @@
 .empty {
     // flex-flow: 1;
     height: 100%;
-    min-height: 37rem;
+    // min-height: 37rem;
     @include tablets {
         min-height: 40rem;
     }
@@ -24,6 +24,7 @@
 }
 
 .container__footer {
+    height: 97%;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;

@@ -5,34 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Главная страница
-    </title>
+    <title>Mister Burger</title>
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
+
 </head>
 
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="section hero">
+            <section class="section hero" data-menuanchor="hero">
                 <div class="container hero__inner_container">
                     <header class="header">
                         <div class="container">
-                          <div class="nav" id="navid"><img class="nav__logo" src="./img/logo.svg" alt="">
-                            <ul class="nav__list">
-                              <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
-                              <li class="nav__item"><a class="nav__link" href="#">Бургеры</a></li>
-                              <li class="nav__item"><a class="nav__link" href="#">Команда</a></li>
-                              <li class="nav__item"><a class="nav__link" href="#">Меню</a></li>
-                              <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
-                              <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
-                            </ul>
-                            <a class="nav__order" href="#">Заказать</a>
-                            <a class="nav__modal js-opennav" href="#">
-                              <div class="nav__modal_noactive"><img src="./img/menu-open.png" alt=""></div>
-                              <div class="nav__modal_active"><img src="./img/menu-close.png" alt=""></div>
-                            </a>
-                          </div>
+                            <div class="nav" id="navid"><img class="nav__logo" src="./img/logo.svg" alt="">
+                                <ul class="nav__list">
+                                    <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+                                    <li class="nav__item"><a class="nav__link" href="#">Бургеры</a></li>
+                                    <li class="nav__item"><a class="nav__link" href="#">Команда</a></li>
+                                    <li class="nav__item"><a class="nav__link" href="#">Меню</a></li>
+                                    <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
+                                    <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+                                </ul>
+                                <a class="nav__order" href="#">Заказать</a>
+                                <a class="nav__modal js-opennav" href="#">
+                                    <div class="nav__modal_noactive"><img src="./img/menu-open.png" alt=""></div>
+                                    <div class="nav__modal_active"><img src="./img/menu-close.png" alt=""></div>
+                                </a>
+                            </div>
                         </div>
                     </header>
                     <div class="hero__container">
@@ -54,9 +55,7 @@
                 </div>
             </section>
 
-
-
-            <section class="section best">
+            <section class="section best" data-menuanchor="best">
                 <div class="container">
                     <h1 class="section__title section__title-center section__title-black">Мы лучшие</h1>
                     <ul class="best__list">
@@ -161,7 +160,6 @@
                 </div>
 
             </section>
-
 
             <section class="section team">
 
@@ -279,7 +277,6 @@
                 </div>
             </section>
 
-
             <section class="section reviews ">
                 <ul class="review__list ">
                     <li class="review__item " style="background-image: url(./img/reviews/1.jpg) ">
@@ -354,7 +351,7 @@
 
                     <li class="review__item " style="background-image: url(./img/reviews/wayne.png) ">
                         <div class="reviews__hover ">
-                            <h3 class="reviews__title ">Константин Спилберг</h3>
+                            <h3 class="reviews__title ">Брюс Уейн</h3>
                             <div class="reviews__text">
                                 <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                             </div>
@@ -437,7 +434,7 @@
                                     </div>
                                 </div>
                                 <div class="form__row">
-                                    <a href="#" class="btn">Заказать</a>
+                                    <a href="#" class="btn" id="btn-order">Заказать</a>
                                     <a href="#" class="btn btn-clear">Очистить</a>
                                 </div>
                             </div>
@@ -500,32 +497,57 @@
         </div>
     </div>
     <ul class="fixed-menu">
-        <li class="fixed-menu__item">
-            <a class="fixed-menu__link" href=""></a>
+        <li class="fixed-menu__item" data-menuanchor="hero">
+            <a class="fixed-menu__link" href="#hero"></a>
         </li>
-        <li class="fixed-menu__item">
-            <a class="fixed-menu__link" href=""></a>
+        <li class="fixed-menu__item" data-menuanchor="best">
+            <a class="fixed-menu__link" href="#best"></a>
         </li>
-        <li class="fixed-menu__item">
-            <a class="fixed-menu__link" href=""></a>
+        <li class="fixed-menu__item" data-menuanchor="burgers">
+            <a class="fixed-menu__link" href="#burgers"></a>
         </li>
-        <li class="fixed-menu__item">
-            <a class="fixed-menu__link" href=""></a>
+        <li class="fixed-menu__item" data-menuanchor="team">
+            <a class="fixed-menu__link" href="#team"></a>
         </li>
-        <li class="fixed-menu__item">
-            <a class="fixed-menu__link" href=""></a>
+        <li class="fixed-menu__item" data-menuanchor="menu">
+            <a class="fixed-menu__link" href="#menu"></a>
         </li>
-        <li class="fixed-menu__item">
-            <a class="fixed-menu__link" href=""></a>
+        <li class="fixed-menu__item" data-menuanchor="reviews">
+            <a class="fixed-menu__link" href="#reviews"></a>
         </li>
-        <li class="fixed-menu__item">
-            <a class="fixed-menu__link" href=""></a>
+        <li class="fixed-menu__item" data-menuanchor="order">
+            <a class="fixed-menu__link" href="#order"></a>
         </li>
-        <li class="fixed-menu__item">
-            <a class="fixed-menu__link" href=""></a>
+        <li class="fixed-menu__item" data-menuanchor="map">
+            <a class="fixed-menu__link" href="#map"></a>
         </li>
     </ul>
-    <script src="./js/jquery.min.js " defer></script>
+    <div class="modalWindow">
+        <div class="modalWindow__content">
+            <div class="modalWindow__title-contaner">
+                <div class="title-author">
+                    <span class="title-author-span"></span>
+                </div>
+                <div class="title__close">
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+            <div class="modal__text">
+                <span class="modal__text-span"></span>
+            </div>
+        </div>
+    </div>
+    <div class="modalOrder">
+        <div class="modalWindow__content modalWindow__content-order">
+            <div class="modal__text">
+                Сообщение отправлено
+            </div>
+            <a class="btn btn-close" href="#">Закрыть</a>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
     <script src="./js/app.js " defer></script>
 </body>
 
