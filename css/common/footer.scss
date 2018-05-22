@@ -7,6 +7,7 @@
     position: relative;
     @include phones(){
         min-height: 14rem;
+        margin-top: rem(-88px);
     }
 }
 
