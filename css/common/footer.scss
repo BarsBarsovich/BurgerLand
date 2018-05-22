@@ -1,0 +1,61 @@
+.footer {
+    background: #000;
+    min-height: 8rem;
+    width: 100%;
+    color: #fff;
+    font-size: rem(20px);
+    position: relative;
+    @include phones(){
+        min-height: 14rem;
+    }
+}
+
+.container__footer {
+    height: 97%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    @include phones() {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.footer__social-list {
+    display: flex;
+}
+
+.footer__adr {
+    color: #ffffff;
+    font-family: Ubuntu;
+    font-size: rem(14px);
+    margin-top: rem(10px);
+}
+
+.footer__phone {
+    font-family: "Ubuntu Light";
+    font-weight: 300;
+    color: #e45028;
+    padding-top: rem(10px);
+    display: block;
+}
+
+.footer__social-svg {
+    width: rem(20px);
+    height: rem(20px);
+    fill: #fff;
+    opacity: 0.3;
+}
+
+.footer__social-svg:hover {
+    opacity: 1;
+}
+
+.footer__social {
+    margin-top: rem(20px);
+}
+
+.footer__social-item {
+    padding-right: rem(20px);
+}

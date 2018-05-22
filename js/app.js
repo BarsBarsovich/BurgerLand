@@ -1,26 +1,24 @@
-$(document).ready(function() {
-    $('.maincontent').fullpage({
-        anchors: ['hero', 'best', 'burgers', 'team', 'menu', 'reviews', 'order', 'map'],
-        menu: ".fixed-menu"
-            // scrollOverflow: true
-            // navigationTooltips: ['О нас', '3232', 'rrre']
-    });
-});
+// $(document).ready(function() {
+//     $('.maincontent').fullpage({
+//         anchors: ['hero', 'best', 'burgers', 'team', 'menu', 'reviews', 'order', 'map'],
+//         menu: ".fixed-menu"
+//     });
+// });
+
 
 $(function() {
-
     var btn = $('.menu-list__title');
     var activeclass = "menu-list__item_active";
     var details = $('.btn-dark');
     var li = $('.acco__trigger');
     var modal = $('.modalWindow');
     var closeModal = $('.close');
+    var test = $('#form__order');
 
-
-    $('#btn-order').click(function(event) {
-        event.preventDefault();
-        $('.modalOrder').css('display', 'block');
-    });
+    $('.maincontent').fullpage({
+        anchors: ['hero', 'best', 'burgers', 'team', 'menu', 'reviews', 'order', 'map'],
+        menu: ".fixed-menu"
+    });    
 
     $('.btn-close').click(function(event) {
         event.preventDefault();
@@ -80,6 +78,25 @@ $(function() {
             li.parent().removeClass(activeItem);
             current.addClass(activeItem);
         }
+    });
+
+    $("#form__order").on('submit', function (e) {
+        e.preventDefault();
+        $.ajax('data.php', {
+          type: "POST",
+          data: $(this).serialize(),
+          success: function (data) {
+            $('#result').text(data);
+          }
+        })
+    });
+
+    $('#send_form').click(e=>{
+        $("#form__order").submit();
+    });
+
+    $('#reset_form').click(()=>{
+        $("#form__order")[0].reset();
     });
 
     initHamburger();
