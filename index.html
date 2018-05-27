@@ -365,30 +365,30 @@
             <section class="section order ">
                 <div class="container ">
                     <h2 class="section__title section__title-center ">Закажите доставку</h2>
-                    <form action="#" class="form " id="form__order">
+                    <form action="data.php" method="POST" class="form " id="form__order">
                         <div class="form__container">
                             <div class="form__contact">
                                 <div class="form__row">
                                     <label class="form__block">
                                         <span class="form__title">Имя</span>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" name="name" required="required">
                                     </label>
 
                                     <label class="form__block">
                                         <span class="form__title">Телефон</span>
-                                        <input type="text" class="form__input">
+                                        <input type="tel" class="form__input" name="phone" required="required" id="phone">
                                     </label>
                                 </div>
                                 <div class="form__row">
                                     <label class="form__block">
                                         <span class="form__title">Улица</span>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" name="street" required="required">
                                     </label>
                                 </div>
                                 <div class="form__row">
                                     <label class="form__block">
                                         <span class="form__title">Дом</span>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" name="house" required="required">
                                     </label>
 
                                     <label class="form__block">
@@ -397,8 +397,8 @@
                                     </label>
 
                                     <label class="form__block">
-                                        <span class="form__title">Квратира</span>
-                                        <input type="text" class="form__input">
+                                        <span class="form__title">Квратира</span >
+                                        <input type="text" class="form__input" name="flat" required="required">
                                     </label>
 
                                     <label class="form__block">
@@ -435,7 +435,7 @@
                                 </div>
                                 <div class="form__row">
                                     <a href="#" class="btn" id="send_form">Заказать</a>
-                                    <a href="#" class="btn btn-clear" type="reset" id="reset_form">Очистить</a>
+                                    <a href="#" class="btn btn-clear" id="reset_form">Очистить</a>
                                 </div>
                             </div>
                         </div>
@@ -547,6 +547,7 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/jquery.fullpage.js"></script>
+    <script src="./js/jquery.maskedinput.js"></script>
     <script src="./js/app.js " defer></script>
     <script src="./js/map.js"></script>
 </body>

@@ -1,11 +1,3 @@
-// $(document).ready(function() {
-//     $('.maincontent').fullpage({
-//         anchors: ['hero', 'best', 'burgers', 'team', 'menu', 'reviews', 'order', 'map'],
-//         menu: ".fixed-menu"
-//     });
-// });
-
-
 $(function() {
     var btn = $('.menu-list__title');
     var activeclass = "menu-list__item_active";
@@ -15,10 +7,12 @@ $(function() {
     var closeModal = $('.close');
     var test = $('#form__order');
 
+    $("#phone").mask("+7(999) 999-9999");
+
     $('.maincontent').fullpage({
         anchors: ['hero', 'best', 'burgers', 'team', 'menu', 'reviews', 'order', 'map'],
         menu: ".fixed-menu"
-    });    
+    });
 
     $('.btn-close').click(function(event) {
         event.preventDefault();
@@ -80,22 +74,24 @@ $(function() {
         }
     });
 
-    $("#form__order").on('submit', function (e) {
+    $("#form__order").on('submit', function(e) {
         e.preventDefault();
         $.ajax('data.php', {
-          type: "POST",
-          data: $(this).serialize(),
-          success: function (data) {
-            $('#result').text(data);
-          }
+            type: "POST",
+            data: $(this).serialize(),
+            success: function(data) {
+                // $('#result').text(data);
+                console.log("done");
+                $('.modalOrder').css('display', 'block');
+            },
         })
     });
 
-    $('#send_form').click(e=>{
+    $('#send_form').click(e => {
         $("#form__order").submit();
     });
 
-    $('#reset_form').click(()=>{
+    $('#reset_form').click(() => {
         $("#form__order")[0].reset();
     });
 
