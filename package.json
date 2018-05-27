@@ -1,0 +1,23 @@
+{
+  "name": "burgershop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarsBarsovich/BurgerLand.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BarsBarsovich/BurgerLand/issues"
+  },
+  "homepage": "https://github.com/BarsBarsovich/BurgerLand#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.1"
+  }
+}

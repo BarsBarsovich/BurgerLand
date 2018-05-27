@@ -14,8 +14,8 @@
     }
 }
 
-@mixin widephone{
-    @media screen  and (max-width: $widePhones){
+@mixin widephone {
+    @media screen and (max-width: $widePhones) {
         @content;
     }
 }

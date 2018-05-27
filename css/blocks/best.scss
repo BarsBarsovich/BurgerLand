@@ -12,7 +12,7 @@
     justify-content: space-around;
     height: 100%;
     align-items: center;
-    @include widephone(){
+    @include widephone() {
         flex-direction: column;
     }
 }
