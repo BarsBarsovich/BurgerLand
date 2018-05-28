@@ -1,6 +1,7 @@
 'use strict';
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var livereload = require('gulp-livereload');
 
 
 var paths = {
@@ -16,14 +17,14 @@ gulp.task('scss', function() {
 });
 
 
-gulp.task('watch', function() {
+gulp.task('watch', function() {    
     gelp.watch(paths.styles.src, 'scss');
+    livereload.listen();
 });
 
 
 gulp.task('default', function() {
-    gulp.watch(paths.styles.src, gulp.series(
-        gulp.parallel('scss'),
-        // gulp.parallel('watch')
+    gulp.watch(paths.styles.src, gulp.series(        
+        gulp.parallel('scss')
     ));
 });

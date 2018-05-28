@@ -29,13 +29,15 @@
   font-weight: bold;
   font-style: normal; }
 
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 0.9375rem; } }
-
-@media screen and (max-width: 480px) {
-  html {
-    font-size: 0.8125rem; } }
+html {
+  height: 100%;
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 0.9375rem; } }
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 0.8125rem; } }
 
 html,
 body {
@@ -45,6 +47,8 @@ body {
   overflow: hidden; }
 
 body {
+  height: 100%;
+  width: 100%;
   font-size: 1rem;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
@@ -858,12 +862,6 @@ p {
 .map {
   display: flex;
   flex-direction: column; }
-
-.empty {
-  height: 80%; }
-  @media screen and (max-width: 768px) {
-    .empty {
-      min-height: 40rem; } }
 
 .modalWindow,
 .modalOrder {
