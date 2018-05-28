@@ -4,9 +4,9 @@
     flex-direction: column;
 }
 
-// .empty {    
-//     height: 90%;
-//     @include tablets {
-//         min-height: 40rem;
-//     }
-// }
+.empty {    
+    height: 100%;
+    @include tablets {
+        min-height: 40rem;
+    }
+}

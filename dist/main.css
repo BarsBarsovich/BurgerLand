@@ -863,6 +863,12 @@ p {
   display: flex;
   flex-direction: column; }
 
+.empty {
+  height: 100%; }
+  @media screen and (max-width: 768px) {
+    .empty {
+      min-height: 40rem; } }
+
 .modalWindow,
 .modalOrder {
   display: none;
