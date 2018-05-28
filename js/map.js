@@ -43,7 +43,7 @@ function init() {
 
         }, {
             iconLayout: 'default#image',
-            iconImageHref: './img/map-marker.png',
+            iconImageHref: '../img/map-marker.png',
             iconSize: [46, 57],
             iconImageOffset: [-23, -57]
 
